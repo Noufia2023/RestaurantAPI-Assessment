@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Add your CSS and JavaScript files here -->
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'Restaurant details' %}">Restaurant details</a></li>
+                <li><a href="{% url 'Review' %}">Review </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Content of the specific page will go here -->
+        {% block content %} {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
